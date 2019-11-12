@@ -1,0 +1,37 @@
+Package: OptimalTrial
+Type: Package
+Title: Functions for Optimising subgroup selection in two-stage adaptive 
+  enrichment and umbrella designs
+Version: 0.1.0
+Author: Nicolas Ballarini
+Maintainer: Nicolas Ballarini <nicoballarini@gmail.com>
+Description: We design two-stage adaptive confirmatory clinical trials that use adaptation to
+  find the subgroup of patients who will benefit from a treatment. We make use of 
+  a Bayesian decision theoretic framework to optimise the design parameters, using
+  a pre-specified utility function that takes the prevalence of the subpopulations
+  into account as a measure of overall performance. Our proposal allows altering
+  aspects of the trial such as recruitment probabilities of each group in an 
+  interim analysis, ensuring efficient use of available resources to maximise the 
+  expected gain. This design includes adaptive enrichment and single-stage designs
+  as special cases. We use the conditional error rate approach for enabling trial 
+  adaptations and consider testing whether there is a treatment effect in each of
+  the disjoint subgroups separately. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: 
+  colorspace,
+  dfoptim,
+  dplyr,
+  ggplot2,
+  mvtnorm,
+  rprojroot
+Suggests:
+  ggpubr,
+  knitr,
+  Rvmmin,
+  optimr,
+  parallel,
+  rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
